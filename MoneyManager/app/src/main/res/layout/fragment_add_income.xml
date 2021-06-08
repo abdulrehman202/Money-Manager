@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_expense"
+    android:background="#F1F1F1"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@color/standard"
+        ></ImageView>
+
+    <LinearLayout
+        android:layout_width="350sp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-30sp"
+        android:orientation="vertical"
+        >
+            <EditText
+                android:id="@+id/get_income"
+                android:layout_width="350sp"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:hint="Enter Amount"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:background="@drawable/layout_border"
+                android:cursorVisible="false"
+                android:layout_gravity="center_horizontal"
+                ></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120sp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:src="@drawable/salary"
+                        ></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salary"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        ></TextView>
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_category_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    ></Button>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="120sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="20sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:src="@drawable/pocket_money"
+                        ></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pocket Money"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_horizontal"
+                        ></TextView>
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_category_pocketmoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    ></Button>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120sp"
+                android:layout_height="100sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:src="@drawable/investment"
+                        ></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Investment"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        ></TextView>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_category_investment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"></Button>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="120sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="20sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:src="@drawable/freelance"
+                        ></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Freelancing"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        ></TextView>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_category_freelance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    ></Button>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120sp"
+                android:layout_height="100sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:src="@drawable/savings"
+                        ></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Savings"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        ></TextView>
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_category_savings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    ></Button>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="120sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="20sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:src="@drawable/other"
+                        ></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        ></TextView>
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_category_other_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    ></Button>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_finish_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:text="Finish"
+            android:background="@color/standard"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_add_details_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Add Details"
+            android:background="@drawable/round_border"
+            android:textSize="20sp"
+            ></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

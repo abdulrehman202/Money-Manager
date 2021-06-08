@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transaction_detail"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:background="@color/standard"
+        android:text="Preview Transaction"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-30sp"
+        android:orientation="vertical">
+
+<!--        <ScrollView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_border"
+                >
+
+                <TextView
+                    android:id="@+id/preview_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Home"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/preview_expense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/preview_category"
+                    android:layout_marginLeft="20sp"
+                    android:text="PKR -25000">
+                    <!--                android:textColor="#FF0000"-->
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_preview_receipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/round_border"
+                android:hint="View Receipt"
+                android:textColor="@color/standard"></Button>
+
+            <Button
+                android:id="@+id/btn_Upload_New_Receipt_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@color/standard"
+                android:text="UPLOAD NEW RECEIPT"
+                android:textColor="@color/white"
+                android:textSize="15sp"></Button>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Transaction #"
+                        android:textSize="15sp"
+                        android:textStyle="italic"></TextView>
+
+                    <TextView
+                        android:id="@+id/trans_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Transaction Id:"
+                        android:textSize="15sp"
+                        android:textStyle="italic"></TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Type: "
+                        android:textSize="15sp"
+                        android:textStyle="italic"></TextView>
+
+                    <TextView
+                        android:id="@+id/trans_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Transaction Type"
+                        android:textSize="15sp"></TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+<!--                    android:padding="5sp"-->
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Amount: "
+                        android:textSize="15sp"
+                        android:textStyle="italic"></TextView>
+
+                    <EditText
+                        android:id="@+id/preview_change_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:clickable="true"
+                        android:cursorVisible="false"
+                        android:hint="New Amount"
+                        android:inputType="none"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></EditText>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+<!--                    android:padding="5sp"-->
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Category: "
+                        android:textSize="15sp"
+                        android:textStyle="italic"></TextView>
+
+                    <Spinner
+                        android:id="@+id/preview_transaction_change_category"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="35sp"
+                        android:layout_marginTop="10sp"
+                        android:contentDescription="Transaction Type"
+                        android:text="Transaction Via"
+                        android:textSize="20sp"></Spinner>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Additional Details"
+                android:textColor="#000000"
+                android:textSize="20sp"></TextView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_border">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Description: "
+                        android:textSize="15sp"
+                        android:textStyle="italic"></TextView>
+
+                    <EditText
+                        android:id="@+id/preview_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:hint="Add Description"
+                        android:textSize="15sp"></EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Date: "
+                        android:textSize="15sp"
+                        android:textStyle="italic"></TextView>
+
+                    <TextView
+                        android:id="@+id/preview_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:clickable="true"
+                        android:text="Add Date"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Medium: "
+                        android:textSize="15sp"
+                        android:textStyle="italic"></TextView>
+
+                    <Spinner
+                        android:id="@+id/preview_transaction_medium"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="35sp"
+                        android:layout_marginTop="10sp"
+                        android:contentDescription="Transaction Type"
+                        android:text="Transaction Via"
+                        android:textSize="20sp"></Spinner>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <RadioGroup
+                android:id="@+id/what_to_do_RG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10sp">
+
+                <RadioButton
+                    android:id="@+id/only_EditRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/standard"
+                    android:checked="true"
+                    android:text="Edit this Transaction"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/only_DeleteRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/standard"
+                    android:text="Delete this Transaction"></RadioButton>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_Done_transaction_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/standard"
+                android:text="DONE"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/white"
+                android:textSize="20sp"></Button>
+
+<!--        </ScrollView>-->
+    </LinearLayout>
+</LinearLayout>

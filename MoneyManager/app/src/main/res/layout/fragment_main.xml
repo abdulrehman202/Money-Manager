@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f1f1"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@color/standard"
+                ></View>
+
+                <LinearLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-50sp"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+
+                    >
+                    <TextView
+                        android:id="@+id/txtWhatyouhave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What you have"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:fontFamily="serif-monospace"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_money_i_have"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtWhatyouhave"
+                        android:layout_alignLeft="@id/txtWhatyouhave"
+                        android:text="PKR 25000"
+                        android:textColor="#045005"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10sp"
+                        >
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/btn_add_account"
+                        android:layout_width="80sp"
+                        android:layout_height="50sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_below="@id/txt_money_i_have"
+                        android:layout_marginLeft="10sp"
+                        android:src="@drawable/ic_add_black_24dp"
+                        android:background="@drawable/round_border"
+                        android:clickable="true"
+                        ></ImageButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:id="@+id/layout_piechart"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Your Expenses"
+                        android:textStyle="bold"
+                        android:fontFamily="serif-monospace"
+                        android:layout_gravity="center_horizontal"
+                        >
+                    </TextView>
+
+                    <org.eazegraph.lib.charts.PieChart
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:padding="8dp"
+                        app:egLegendTextSize="18sp"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15sp"
+                        >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Home"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Home"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Grocery"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Grocery"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Food"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Food"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            >
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Personal"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Personal"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Transport"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Transport"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Other"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Other"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            >
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Health"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="Health"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Education"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Education"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Gym"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Gym"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            >
+
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@color/Bills"
+                                >
+                            </View>
+
+                            <TextView
+                                android:text="@string/Bills"
+                                android:textSize="15sp"
+                                android:padding="5sp"
+                                ></TextView>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                     </LinearLayout>
+                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Recent Transactions"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="20sp"
+                                        android:textStyle="bold"
+                                        android:textSize="25sp"
+                                        android:fontFamily="serif-monospace"
+                                        ></TextView>
+
+            <ListView
+                android:id="@+id/list_recent_expenses"
+                android:layout_width="350sp"
+                android:layout_height="350sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20sp"
+                android:background="@color/white"
+                android:scrollbars="vertical"
+                ></ListView>
+            </LinearLayout>
+
+            </ScrollView>

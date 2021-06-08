@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="standard">#4A148C</color>
+    <color name="standard_combination">#860CFF</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#55FFFFFF</color>
+    <color name="Home">#74B9AF</color>
+    <color name="Bills">#009688</color>
+    <color name="Grocery">#5969DB</color>
+    <color name="Personal">#F0DB5C</color>
+    <color name="Transport">#8CFD8E</color>
+    <color name="Health">#CDFF4DB8</color>
+    <color name="Food">#F5943E</color>
+    <color name="Gym">#33691E</color>
+    <color name="Education">#F0FF0C</color>
+    <color name="Other">#F74949</color>
+    <color name="Red_Colour">#FA0E00</color>
+    <color name="Blank_Pie_Chart">#979797</color>
+
+
+</resources>

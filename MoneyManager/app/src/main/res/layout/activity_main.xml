@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="251dp"
+        android:src="@drawable/finance_icon_4"></ImageView>
+
+    <LinearLayout
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/layout_border"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To Money Manager!"
+            android:layout_gravity="center_horizontal"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Track your Expenses and Income"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/edtTxtUsername"
+            android:layout_width="250sp"
+            android:layout_height="50sp"
+            android:layout_above="@id/edtTxtPassword"
+            android:layout_alignLeft="@id/edtTxtPassword"
+            android:layout_marginBottom="10sp"
+            android:hint="Username"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/edtTxtPassword"
+            android:layout_width="250sp"
+            android:layout_height="50sp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10sp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            ></EditText>
+
+        <Button
+            android:id="@+id/btnSignin"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:text="Sign in"
+            android:background="@color/standard"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            ></Button>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:text="Sign Up"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/round_border"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50sp"
+            ></Button>
+
+    </LinearLayout>
+
+<!--    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/finance_icon_4"
+        android:layout_gravity="center_horizontal"
+        ></ImageView>-->
+
+</LinearLayout>
